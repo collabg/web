@@ -21,6 +21,7 @@ const App = ({ Component, pageProps, cookies }: AppPropsWithCookies) => {
     onLoad: 'check-sso',
     silentCheckSsoRedirectUri: '${publicRuntimeConfig.baseUrl}/silent-check-sso.html',
     pkceMethod: 'S256',
+    checkLoginIframe: false,
   }
   
   return (
