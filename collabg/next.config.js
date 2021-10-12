@@ -7,6 +7,9 @@ module.exports = {
       realm: 'collabg',
       // clientId: 'localhost',
       clientId: 'collabg',
+    },
+    images: {
+      loader: 'cloudinary'
     }
   }
 }
