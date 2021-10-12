@@ -3,7 +3,7 @@ import { useKeycloak } from '@react-keycloak/ssr';
 import type { KeycloakInstance } from 'keycloak-js';
 import { NextPage } from 'next';
 
-const withAuth = <PageProps extends Record <string, unknown>>(Page: NextPage<PageProps>): NextPage<PageProps> => ({ ...props }) => {
+const withAuth = <PageProps extends Record <string, unknown>>(Page: NextPage<PageProps>): NextPage<PageProps> => function Auth ({ ...props }) {
     const {keycloak, initialized} = useKeycloak<KeycloakInstance>();
     useEffect(() => {
         if (initialized && !keycloak?.authenticated) {
