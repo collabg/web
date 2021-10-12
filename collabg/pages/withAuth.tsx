@@ -19,4 +19,5 @@ const withAuth = <PageProps extends Record <string, unknown>>(Page: NextPage<Pag
     )
 }
 
+withAuth.displayName = 'Auth';
 export default withAuth
