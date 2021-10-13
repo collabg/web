@@ -19,7 +19,8 @@ const App = ({ Component, pageProps, cookies }: AppPropsWithCookies) => {
 
   const keycloakInitOptions = {
     onLoad: 'check-sso',
-    silentCheckSsoRedirectUri: '${publicRuntimeConfig.baseUrl}/silent-check-sso.html',
+    silentCheckSsoFallback: false,
+    // silentCheckSsoRedirectUri: '${publicRuntimeConfig.baseUrl}/silent-check-sso.html',
     pkceMethod: 'S256',
     checkLoginIframe: false,
   }
