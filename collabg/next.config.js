@@ -5,11 +5,12 @@ module.exports = {
     keycloak: { // keycloak config
       url: 'https://keycloak.collabg.net/auth',
       realm: 'collabg',
-      // clientId: 'localhost',
-      clientId: 'collabg',
+      clientId: 'localhost',
+      // clientId: 'collabg',
     }
   },
   images: {
-    loader: 'cloudinary'
+    loader: 'cloudinary',
+    domains: [],
   }
 }

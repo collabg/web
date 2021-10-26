@@ -3,6 +3,10 @@ import getConfig from 'next/config'
 import { SSRKeycloakProvider, SSRCookies } from '@react-keycloak/ssr'
 import { IncomingMessage } from 'http'
 import cookie from 'cookie'
+import '../styles/globals.css'
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 interface AppPropsWithCookies extends AppProps {
   cookies: unknown
